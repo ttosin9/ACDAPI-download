@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Our App</title>
+</head>
+<body>
+  <h1>Your download will start automatically...</h1>
+  <script>
+    window.onload = () => {
+      const link = document.createElement('a');
+      link.href = "https://docs.google.com/uc?export=download&id=1wZJtggLCWWxGFDkYb2wRgZ6NwYGIMbVE";
+      link.download = "ACDAPI.apk";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</body>
+</html>
